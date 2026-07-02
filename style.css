@@ -10,10 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background:
-    /* radial-gradient(circle at top left, #5d00ff, #070014 40%),
-    radial-gradient(circle at bottom right, #ff4d4d, #070014 40%); */ 
-   background-color: #2e4a73;   /* Light Blue */
+   background-color: #2e4a73;   
 }
 
 .calculator {
