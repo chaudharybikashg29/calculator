@@ -131,6 +131,6 @@ body {
 button:active{
     transform: scale(0.95);
 }
-/* button{
+button{
     cursor: pointer;
-} */
+}
