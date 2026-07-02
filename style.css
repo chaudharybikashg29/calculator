@@ -10,9 +10,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:
-    radial-gradient(circle at top left, #5d00ff, #070014 40%),
-    radial-gradient(circle at bottom right, #ff4d4d, #070014 40%);
+  /* background:
+    /* radial-gradient(circle at top left, #5d00ff, #070014 40%),
+    radial-gradient(circle at bottom right, #ff4d4d, #070014 40%); */ 
+   background-color: #2e4a73;   /* Light Blue */
 }
 
 .calculator {
@@ -30,6 +31,9 @@ body {
     0 0 25px rgba(255, 0, 255, 0.25),
     0 0 50px rgba(0, 255, 255, 0.1);
 }
+.btn function{
+  background-color: #ff8a00;
+}
 
 .display {
   height: 140px;
@@ -45,6 +49,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  
+    text-align: right;
+    font-size: 40px;
+    
+
 }
 
 #expression {
@@ -89,13 +98,14 @@ body {
   backdrop-filter: blur(15px);
 
   box-shadow:
-    inset 0 0 10px rgba(255, 255, 255, 0.05),
-    0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 12px rgba(0,0,0,.3);
+ 
 }
 
 .btn:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
+  transition: 0.2s;
 }
 
 .operator {
@@ -105,15 +115,22 @@ body {
 }
 
 .function {
-  color: #b56fff;
+  color:white ;
+  background-color: #ff8a00;
 }
 
 .equal {
-  background: linear-gradient(135deg, #ff5ea7, #7b61ff);
+  background: linear-gradient(135deg,#a855f7,#7c3aed);
 
   box-shadow: 0 0 20px rgba(255, 94, 167, 0.4);
 }
 
 .zero {
   grid-column: span 2;
+}
+button:active{
+    transform: scale(0.95);
+}
+button{
+    cursor: pointer;
 }
